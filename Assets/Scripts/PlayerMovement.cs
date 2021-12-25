@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
+        JoystickIsBeenUsed(joystick);
+
 #else
 
         JoystickIsBeenUsed(joystick);
